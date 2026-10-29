@@ -4,23 +4,24 @@
 
 | Item | Image | Description | Project Usage | Quantity | Product Link |
 | ------ | ------- | ------------- | --------------- | ---------- | -------------- |
-| Arduino Mega | <img src="assets/arduino-mega.png" width="80"> | Microcontroller board with many analog and digital I/O pins. | Main controller of the system. Reads the soil moisture sensors and switches the pumps through the relay module when moisture falls below the threshold. | 1 | |
-| Protoboard 20x30cm | <img src="assets/protoboard.png" width="80"> | Large perforated prototyping board for soldered circuits. | Base for the permanent circuit: mounts the pinheaders and connects the Arduino, sensor lines, relay module, and power distribution. | 1 | |
-| Male Pinheaders | <img src="assets/male-pinheaders.png" width="80"> | Single-row male connector strips. | Soldered on the protoboard to provide plug-in connection points for the Arduino and sensor/relay wiring. | 10 | |
-| Female Pinheaders | <img src="assets/female-pinheaders.png" width="80"> | Single-row female socket strips. | Soldered on the protoboard as sockets so the Arduino and modules can be plugged in and removed without soldering. | 10 | |
-| Analog Capacitive Soil Moisture Sensor | <img src="assets/soil-moisture-sensor.png" width="80"> | Corrosion-resistant sensor that outputs an analog voltage proportional to soil moisture. | One sensor per pot, wired to the Arduino analog inputs to measure each plant's soil moisture. | 4 | |
-| 16 Channel Relay Module | <img src="assets/relay-module-16ch.png" width="80"> | Board of 16 relays that switch high-current loads from low-power logic signals. | Controlled by the Arduino to turn each peristaltic pump on and off; spare channels are available for expansion. | 1 | |
-| LiPo Battery 18650 | <img src="assets/battery-18650.png" width="80"> | Rechargeable 18650 cells for energy storage. | Battery bank (9 cells) that stores solar energy and powers the Arduino, relay module, and pumps, including when there is no sunlight. | 9 | |
-| Solar Panel 100W | <img src="assets/solar-panel-100w.png" width="80"> | Photovoltaic panel that converts sunlight into electricity. | Primary power source; charges the battery bank through the charge controller. | 1 | |
-| PWM Solar Charge Controller | <img src="assets/pwm-charge-controller.png" width="80"> | Regulates solar panel output to charge a battery safely using PWM. | Placed between the solar panel and battery bank to prevent overcharging and protect the batteries. | 1 | |
-| XL4015 Buck Converter | <img src="assets/xl4015-buck-converter.png" width="80"> | Adjustable DC-DC step-down converter (up to 5A). | Steps the battery voltage down to the regulated voltage required by the Arduino, relay module, and pumps. | 1 | |
-| Peristaltic Pump | <img src="assets/peristaltic-pump.png" width="80"> | Pump that moves liquid by compressing a flexible tube; self-priming and accurate. | One pump per pot, switched by the relay module to deliver measured water from the tank to the plant. | 4 | |
+| Arduino Mega | <img src="assets/arduino-mega.png" width="80"> | Microcontroller board with many analog and digital I/O pins. | Main controller of the system. Reads the soil moisture sensors and switches the pumps through the relay module when moisture falls below the threshold. | 1 | [Buy here](https://s.shopee.ph/BUyGO9Zsj) |
+| Protoboard 20x30cm | <img src="assets/protoboard.png" width="80"> | Large perforated prototyping board for soldered circuits. | Base for the permanent circuit: mounts the pinheaders and connects the Arduino, sensor lines, relay module, and power distribution. | 1 | [Buy here](https://s.shopee.ph/30p9dglv0M) |
+| Male Pinheaders | <img src="assets/male-pinheaders.png" width="80"> | Single-row male connector strips. | Soldered on the protoboard to provide plug-in connection points for the Arduino and sensor/relay wiring. | 10 | [Buy here](https://s.shopee.ph/9fM3aDSnnm) |
+| Female Pinheaders | <img src="assets/female-pinheaders.png" width="80"> | Single-row female socket strips. | Soldered on the protoboard as sockets so the Arduino and modules can be plugged in and removed without soldering. | 10 | [Buy here](https://s.shopee.ph/9fM3aDSnnm) |
+| Analog Capacitive Soil Moisture Sensor | <img src="assets/soil-moisture-sensor.png" width="80"> | Corrosion-resistant sensor that outputs an analog voltage proportional to soil moisture. | One sensor per pot, wired to the Arduino analog inputs to measure each plant's soil moisture. | 4 | [Buy here](https://s.shopee.ph/AKbkNXKoe8) |
+| 16 Channel Relay Module | <img src="assets/relay-module-16ch.png" width="80"> | Board of 16 relays that switch high-current loads from low-power logic signals. | Controlled by the Arduino to turn each peristaltic pump on and off; spare channels are available for expansion. | 1 | [Buy here](https://s.shopee.ph/4VdxQsOQWw) |
+| 18650 Battery Cells | <img src="assets/battery-18650.png" width="80"> | Rechargeable 18650 Li-ion cells for energy storage. | Battery bank (9 cells, 3S3P) that stores solar energy and powers the Arduino, relay module, and pumps, including when there is no sunlight. | 9 | [Buy here](https://s.shopee.ph/8VA6CHpZXr) |
+| 3S 20A BMS | <img src="assets/bms-3s-20a.png" width="80"> | Battery management system for 3-series Li-ion packs with cell balancing and overcharge, over-discharge, and short-circuit protection. | Connected between the 18650 cells and the charge controller to balance the 3 series groups and protect the pack. | 1 | [Buy here](https://s.shopee.ph/3g4qRRxtNY) |
+| Solar Panel 100W | <img src="assets/solar-panel-100w.png" width="80"> | Photovoltaic panel that converts sunlight into electricity. | Primary power source; charges the battery bank through the charge controller. | 1 | [Buy here](https://s.shopee.ph/1BNVSxuGnu) |
+| PWM Solar Charge Controller | <img src="assets/pwm-charge-controller.png" width="80"> | Regulates solar panel output to charge a battery safely using PWM. | Placed between the solar panel and battery bank to prevent overcharging and protect the batteries. | 1 | [Buy here](https://s.shopee.ph/1BNVT2gUjz) |
+| XL4015 Buck Converter | <img src="assets/xl4015-buck-converter.png" width="80"> | Adjustable DC-DC step-down converter (up to 5A). | Steps the battery voltage down to the regulated voltage required by the Arduino, relay module, and pumps. | 1 | [Buy here](https://s.shopee.ph/7AeicFrMbw) |
+| Peristaltic Pump | <img src="assets/peristaltic-pump.png" width="80"> | Pump that moves liquid by compressing a flexible tube; self-priming and accurate. | One pump per pot, switched by the relay module to deliver measured water from the tank to the plant. | 4 | [Buy here](https://s.shopee.ph/4VdxRtbxPP) |
 | Silicone Tubing | <img src="assets/silicone-tubing.png" width="80"> | Flexible, food-safe tubing. | Fitted to each peristaltic pump to carry water from the tank to the pot's drip outlet. | 4 | |
-| Silicone Wire 22AWG | <img src="assets/silicone-wire-22awg.png" width="80"> | Thin, highly flexible heat-resistant wire. | Low-current signal wiring: sensor connections and Arduino-to-relay control lines. | 1 | |
-| Silicone Wire 20AWG | <img src="assets/silicone-wire-20awg.png" width="80"> | Slightly thicker, flexible heat-resistant wire. | Power wiring: battery, buck converter, relay module, and pump connections. | 1 | |
-| Waterproof ABS Enclosure | <img src="assets/abs-enclosure.png" width="80"> | Sealed plastic housing that protects electronics from water and dust. | Houses the Arduino, protoboard, relay module, and power electronics, protecting them from rain and moisture outdoors. | 1 | |
-| Soldering Wire | <img src="assets/soldering-wire.png" width="80"> | Tin alloy solder used to join electrical connections. | Used to solder the pinheaders and wire connections on the protoboard. | 1 | |
-| Soldering Iron | <img src="assets/soldering-iron.png" width="80"> | Heated tool for melting solder. | Used during assembly to solder the circuit on the protoboard and the wire joints. | 1 | |
+| Silicone Wire 22AWG | <img src="assets/silicone-wire-22awg.png" width="80"> | Thin, highly flexible heat-resistant wire. | Low-current signal wiring: sensor connections and Arduino-to-relay control lines. | 1 | [Buy here](https://s.shopee.ph/6AmBQVoPqb) |
+| Silicone Wire 20AWG | <img src="assets/silicone-wire-20awg.png" width="80"> | Slightly thicker, flexible heat-resistant wire. | Power wiring: battery, buck converter, relay module, and pump connections. | 1 | [Buy here](https://s.shopee.ph/6AmBQVoPqb) |
+| Waterproof ABS Enclosure (240mm x 160mm x 92mm ) | <img src="assets/abs-enclosure.png" width="80"> | Sealed plastic housing that protects electronics from water and dust. | Houses the Arduino, protoboard, relay module, and power electronics, protecting them from rain and moisture outdoors. | 1 | [Buy here](https://s.shopee.ph/LoOU0t4h9) |
+| Soldering Wire | <img src="assets/soldering-wire.png" width="80"> | Tin alloy solder used to join electrical connections. | Used to solder the pinheaders and wire connections on the protoboard. | 1 | [Buy here](https://s.shopee.ph/9fM3bE0flr) |
+| Soldering Iron | <img src="assets/soldering-iron.png" width="80"> | Heated tool for melting solder. | Used during assembly to solder the circuit on the protoboard and the wire joints. | 1 | [Buy here](https://s.shopee.ph/9KjDCjx3mV) |
 
 ## Description
 
@@ -61,7 +62,8 @@ flowchart LR
 
     SUN([Sunlight]) --> SP[Solar panel 100W]
     SP --> CC[PWM charge controller]
-    CC --> BAT[(18650 battery bank)]
+    CC <--> BMS[3S 20A BMS]
+    BMS <--> BAT[(18650 battery cells 3S3P)]
     CC --> LOAD[Controller load output]
     LOAD --> BUCK[XL4015 buck converter 5V]
     BUCK --> MEGA[Arduino Mega]
@@ -81,7 +83,8 @@ flowchart LR
 | From | Terminal / Pin | To | Terminal / Pin |
 | ---- | -------------- | -- | -------------- |
 | Solar Panel | + / - | PWM Charge Controller | PV+ / PV- |
-| Battery Bank | + / - | PWM Charge Controller | BAT+ / BAT- |
+| Battery Cells (3S3P) | + / 2 / 1 / - | BMS | B+ / B2 / B1 / B- |
+| BMS | P+ / P- | PWM Charge Controller | BAT+ / BAT- |
 | PWM Charge Controller | LOAD+ / LOAD- | XL4015 Buck Converter | IN+ / IN- |
 | XL4015 Buck Converter (5V) | OUT+ | Arduino Mega | 5V |
 | XL4015 Buck Converter | OUT- | Arduino Mega | GND |
@@ -102,6 +105,7 @@ flowchart LR
 Notes:
 
 - The 9 cells are assumed to be wired 3S3P (about 11.1V), and the pumps are assumed to be 12V. Adjust if your pack or pumps differ.
+- The BMS must be a 3S type. Connect the cell balance leads (B-, B1, B2, B+) in order and verify cell voltages before connecting the BMS output; the charge controller connects only to the BMS P+ / P- output.
 - Set the XL4015 output to 5V with a multimeter before connecting the Arduino and relay module.
 - Many relay modules are active LOW, so the relay turns on when its input pin is driven LOW.
 - All grounds (battery, buck converter, Arduino, relay module, sensors) must be common.
