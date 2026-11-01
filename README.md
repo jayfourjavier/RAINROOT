@@ -4,7 +4,7 @@
 
 Rain Root is a rainwater harvesting system with moisture-based drip irrigation. It collects rainwater in a tank for irrigating plants based on their moisture needs. An Arduino Mega reads the soil moisture sensors and activates peristaltic pumps when the soil moisture drops below a set threshold.
 
-Each pot has its own moisture sensor and pump, allowing for precise watering based on the needs of each individual plant. The system is powered by a solar panel and a 3S3P 18650 Li-ion battery pack.
+The system uses a 70x70 cm plot design with 4 plants. Each plant has its own moisture sensor and pump for precise, per-plant watering. The system is powered by a solar panel and a 3S3P 18650 Li-ion battery pack.
 
 ## Bill of Materials
 
@@ -14,7 +14,7 @@ Each pot has its own moisture sensor and pump, allowing for precise watering bas
 | Protoboard 20x30cm | <img src="assets/protoboard.png" width="400" height="400"> | Large perforated prototyping board for soldered circuits. | Base for the permanent circuit: mounts the pinheaders and connects the Arduino, sensor lines, relay module, and power distribution. | 1 | [Buy here](https://s.shopee.ph/30p9dglv0M) |
 | Male Pinheaders | <img src="assets/male-pinheaders.png" width="400" height="400"> | Single-row male connector strips. | Soldered on the protoboard to provide plug-in connection points for the Arduino and sensor/relay wiring. | 10 | [Buy here](https://s.shopee.ph/9fM3aDSnnm) |
 | Female Pinheaders | <img src="assets/female-pinheaders.png" width="400" height="400"> | Single-row female socket strips. | Soldered on the protoboard as sockets so the Arduino and modules can be plugged in and removed without soldering. | 10 | [Buy here](https://s.shopee.ph/9fM3aDSnnm) |
-| Analog Capacitive Soil Moisture Sensor | <img src="assets/soil-moisture-sensor.png" width="400" height="400"> | Corrosion-resistant sensor that outputs an analog voltage proportional to soil moisture. | One sensor per pot, wired to the Arduino analog inputs to measure each plant's soil moisture. | 4 | [Buy here](https://s.shopee.ph/AKbkNXKoe8) |
+| Analog Capacitive Soil Moisture Sensor | <img src="assets/soil-moisture-sensor.png" width="400" height="400"> | Corrosion-resistant sensor that outputs an analog voltage proportional to soil moisture. | One sensor per plant, wired to the Arduino analog inputs to measure each plant's soil moisture in the 70x70 cm plot. | 4 | [Buy here](https://s.shopee.ph/AKbkNXKoe8) |
 | 16 Channel Relay Module | <img src="assets/relay-module-16ch.png" width="400" height="400"> | Board of 16 relays that switch high-current loads from low-power logic signals. | Controlled by the Arduino to turn each peristaltic pump on and off; spare channels are available for expansion. | 1 | [Buy here](https://s.shopee.ph/4VdxQsOQWw) |
 | 18650 Battery Cells | <img src="assets/battery-18650.png" width="400" height="400"> | Rechargeable 18650 Li-ion cells for energy storage. | Battery bank (9 cells, 3S3P) that stores solar energy and powers the Arduino, relay module, and pumps, including when there is no sunlight. | 9 | [Buy here](https://s.shopee.ph/8VA6CHpZXr) |
 | 3S 20A BMS | <img src="assets/bms-3s-20a.png" width="400" height="400"> | Battery management system for 3-series Li-ion packs with cell balancing and overcharge, over-discharge, and short-circuit protection. | Connected between the 18650 cells and the charge controller to balance the 3 series groups and protect the pack. | 1 | [Buy here](https://s.shopee.ph/3g4qRRxtNY) |
@@ -25,8 +25,8 @@ Each pot has its own moisture sensor and pump, allowing for precise watering bas
 | PVC End Cap (3-inch) | <img src="assets/pvc-end-cap-3-inch.png" width="400" height="400"> | End cap for 3-inch PVC pipe. | Closes the end of the rainwater gutter. | 1 | |
 | PWM Solar Charge Controller | <img src="assets/pwm-charge-controller.png" width="400" height="400"> | Regulates solar panel output to charge a battery safely using PWM. | Placed between the solar panel and battery bank to prevent overcharging and protect the batteries. | 1 | [Buy here](https://s.shopee.ph/1BNVT2gUjz) |
 | XL4015 Buck Converter | <img src="assets/xl4015-buck-converter.png" width="400" height="400"> | Adjustable DC-DC step-down converter (up to 5A). | Steps the battery voltage down to regulated 5V for the Arduino, sensors, and relay-module logic. The pumps receive battery power through the relay contacts. | 1 | [Buy here](https://s.shopee.ph/7AeicFrMbw) |
-| Peristaltic Pump | <img src="assets/peristaltic-pump.png" width="400" height="400"> | Pump that moves liquid by compressing a flexible tube; self-priming and accurate. | One pump per pot, switched by the relay module to deliver measured water from the tank to the plant. | 4 | [Buy here](https://s.shopee.ph/4VdxRtbxPP) |
-| Silicone Tubing | <img src="assets/silicone-tubing.png" width="400" height="400"> | Flexible, food-safe tubing. | Fitted to each peristaltic pump to carry water from the tank to the pot's drip outlet. | 4 | |
+| Peristaltic Pump | <img src="assets/peristaltic-pump.png" width="400" height="400"> | Pump that moves liquid by compressing a flexible tube; self-priming and accurate. | One pump per plant, switched by the relay module to deliver measured water from the tank to each plant in the 70x70 cm plot. | 4 | [Buy here](https://s.shopee.ph/4VdxRtbxPP) |
+| Silicone Tubing | <img src="assets/silicone-tubing.png" width="400" height="400"> | Flexible, food-safe tubing. | Fitted to each peristaltic pump to carry water from the tank to each plant's drip outlet in the plot. | 4 | |
 | Water Tank (50L 570mm x 300mm x 300mm) | <img src="assets/water-tank.png" width="400" height="400"> | Water storage tank for the irrigation system. | Stores rainwater collected for watering the plants. | 1 | [Buy here](https://s.shopee.ph/5q9L7JRwen) |
 | Silicone Wire 22AWG | <img src="assets/silicone-wire-22awg.png" width="400" height="400"> | Thin, highly flexible heat-resistant wire. | Low-current signal wiring: sensor connections and Arduino-to-relay control lines. | 1 | [Buy here](https://s.shopee.ph/6AmBQVoPqb) |
 | Silicone Wire 20AWG | <img src="assets/silicone-wire-20awg.png" width="400" height="400"> | Slightly thicker, flexible heat-resistant wire. | Power wiring: battery, buck converter, relay module, and pump connections. | 1 | [Buy here](https://s.shopee.ph/6AmBQVoPqb) |
@@ -36,11 +36,11 @@ Each pot has its own moisture sensor and pump, allowing for precise watering bas
 
 ## 3D Model
 
-![Isometric 3D model of the Rain Root frame, solar panel, gutter, tank, and pots](assets/3d/ISO1.png)
+![Isometric 3D model of the Rain Root frame, solar panel, gutter, tank, and plot bed](assets/3d/ISO1.png)
 
 The 100W solar panel is mounted at a 30-degree incline and also serves as the rainwater collector. Its dimensions are 980mm x 530mm x 30mm, as listed in the Bill of Materials. Rainwater runs into an orange 3-inch sanitary PVC pipe gutter and is directed to the tank using three 90-degree elbows; one end cap closes the gutter.
 
-The frame is made from 20mm x 20mm galvanized iron tubular steel. Two waterproof enclosures sit beneath the solar panel and are accessible from the back of the frame. One enclosure houses the electronics and battery, and the other houses the water pumps. The peristaltic pumps draw water from the tank and deliver it to the pots through silicone hose.
+The frame is made from 20mm x 20mm galvanized iron tubular steel. Two waterproof enclosures sit beneath the solar panel and are accessible from the back of the frame. One enclosure houses the electronics and battery, and the other houses the water pumps. The peristaltic pumps draw water from the tank and distribute it through silicone hose to 4 plants in a 70x70 cm plot bed.
 
 ### Model Views
 
@@ -56,46 +56,11 @@ The frame is made from 20mm x 20mm galvanized iron tubular steel. Two waterproof
 
 ### Control Logic
 
-```mermaid
-flowchart TD
-    START([Start]) --> INIT[Initialize pins and set moisture threshold]
-    INIT --> RESET[Set pot number i = 1]
-    RESET --> READ[/Read soil moisture sensor i on A0-A3/]
-    READ --> DEC{Soil moisture below threshold?}
-    DEC -- Yes --> ON[Turn ON relay i to start pump i]
-    ON --> WAIT[Wait for watering duration]
-    WAIT --> OFF[Turn OFF relay i to stop pump i]
-    DEC -- No --> OFF
-    OFF --> MORE{More pots? i less than 4}
-    MORE -- Yes --> NEXT[Increment i]
-    NEXT --> READ
-    MORE -- No --> DELAY[Wait for next sampling interval]
-    DELAY --> RESET
-```
+![Control logic flowchart](assets/flowchart-control-logic.svg)
 
 ### Energy and Water Flow
 
-```mermaid
-flowchart LR
-    RAIN([Rainfall]) --> COLLECT[Collect rainwater]
-    COLLECT --> TANK[(Water tank)]
-    TANK --> PUMPS[Peristaltic pumps x4]
-    PUMPS --> TUBE[Silicone tubing and drip outlets]
-    TUBE --> PLANTS([Plants in pots])
-
-    SUN([Sunlight]) --> SP[Solar panel 100W]
-    SP --> CC[PWM charge controller]
-    CC <--> BMS[3S 20A BMS]
-    BMS <--> BAT[(18650 battery cells 3S3P)]
-    CC --> LOAD[Controller load output]
-    LOAD --> BUCK[XL4015 buck converter 5V]
-    BUCK --> MEGA[Arduino Mega]
-    BUCK --> RLY[16 channel relay module]
-    LOAD --> RLY
-    SENS[/Soil moisture sensors x4/] --> MEGA
-    MEGA --> RLY
-    RLY --> PUMPS
-```
+![Energy and water flow](assets/flow-energy-water.svg)
 
 ## Circuit Diagram
 
@@ -117,13 +82,17 @@ flowchart LR
 | Soil Moisture Sensor 2 | AOUT | Arduino Mega | A1 |
 | Soil Moisture Sensor 3 | AOUT | Arduino Mega | A2 |
 | Soil Moisture Sensor 4 | AOUT | Arduino Mega | A3 |
+| Arduino Mega | 5V / GND | Night Sensor | VCC / GND |
+| Night Sensor | AOUT | Arduino Mega | A4 |
 | Arduino Mega | D3 | Relay Module | IN1 |
 | Arduino Mega | D4 | Relay Module | IN2 |
 | Arduino Mega | D5 | Relay Module | IN3 |
 | Arduino Mega | D6 | Relay Module | IN4 |
-| PWM Charge Controller | LOAD+ | Relay Module | COM1 to COM4 |
+| Arduino Mega | D7 | Relay Module | IN5 |
+| PWM Charge Controller | LOAD+ | Relay Module | COM1 to COM5 |
 | Relay Module | NO1 / NO2 / NO3 / NO4 | Pump 1 / 2 / 3 / 4 | + |
-| Pump 1 / 2 / 3 / 4 | - | PWM Charge Controller | LOAD- |
+| Relay Module | NO5 | Night Light | + |
+| Pump 1 / 2 / 3 / 4 and Night Light | - | PWM Charge Controller | LOAD- |
 
 Notes:
 
@@ -151,9 +120,9 @@ A 3S battery pack provides a voltage suited to the 12V pumps.
 
 The PWM solar charge controller is less efficient than MPPT, but costs less and suits this low-power application.
 
-### Why use one sensor and one pump per pot?
+### Why use one sensor and one pump per plant in the plot?
 
-Each pot has its own sensor and pump so it can be monitored and watered individually.
+Each plant in the 70x70 cm plot has its own sensor and pump so it can be monitored and watered individually.
 
 ### Why use silicone-insulated wire?
 
