@@ -36,7 +36,7 @@ The system uses a 70x70 cm plot design with 4 plants. Each plant has its own moi
 
 ## 3D Model
 
-![Isometric 3D model of the Rain Root frame, solar panel, gutter, tank, and plot bed](assets/3d/ISO1.png)
+![Isometric 3D model of the Rain Root frame, solar panel, gutter, tank, and plot bed](assets/3d/ISO.png)
 
 The 100W solar panel is mounted at a 30-degree incline and also serves as the rainwater collector. Its dimensions are 980mm x 530mm x 30mm, as listed in the Bill of Materials. Rainwater runs into an orange 3-inch sanitary PVC pipe gutter and is directed to the tank using three 90-degree elbows; one end cap closes the gutter.
 
